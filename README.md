@@ -29,13 +29,16 @@ When the job on the top of the queue is marked as deleted, it will be discarded 
 
 ## Main Data structures
 
-- Priority Queue: it is used to have the jobs sorted by their execution time in sufficient complexity [Log(N) for each operation]
-- Hashmap: it is used to register the current working jobs in the scheduler
-- Hashset: it is used to help implementation of deletion a job from the scheduler
+- Priority Queue: it is used to have the jobs sorted by their execution time in sufficient complexity [Log(N) for each operation].
+- Hashmap: it is used to register the current working jobs in the scheduler.
+- Hashset: it is used to help implement the deletion of a job from the scheduler.
 
 ## Bugs to fix
 When the scheduler finds a gap between current time and next execution job, it will sleep the whole gap.
 Which means any new jobs will not be executed in this gap.
+
+## Logger
+Created a singleton class with one instance to log when a job starts or ends.
 
 ## Future Work
 Usually all the jobs are not the same, some are more important than the others.
