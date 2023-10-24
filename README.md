@@ -15,7 +15,7 @@ Java threads will be used to apply concurrency for jobs.
 
 The scheduling algorithm depends on sorting the Jobs by their next execution time in the priority queue.
 When the current time is the same as the job on top (nearest execution time), the job will be removed from the queue and executed.
-After executing the Job, it will compute its next execution (using frequency time) and add it again to the queue.
+After executing the Job, it will compute its next execution time (using frequency time) and add it again to the queue.
 
 ## Adding Job
 
